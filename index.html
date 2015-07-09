@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<div href="https://medium2.global.ssl.fastly.net/fit/c/32/32/1*bs9PbxDndAW7mmqve3EQ-w.jpeg"></div>
+
+
+
+
+	</header>
+
+	<section>
+
+		<h1>React Components</h1>
+
+		<article>Components are the smallest, yet most fundamental part of React. They’re similar, in concepts, to things like widgets and modules. React defines itself as a library for building user interfaces. As such, when you think of a user interface you want to build (with React), you need to think of it in terms of the smallest possible components that you can define.</article>
+
+		<article>These components include code which defines how DOM elements are created and how users can interact with them. Components can be defined purely in JavaScript or they can be defined in a superset (or extended variation) of JavaScript called JSX. If you decide to use JSX for your component definitions, you may also need a compiler application, but we’ll get to that in a minute.</article>
+
+
+		<h1>Embedded HTML</h1>
+
+		<article>If you’ve been developing websites for a while, you may have flinched when I spoke about using HTML within your JavaScript. For the longest time, a development paradigm has existed which says that you should split HTML and JavaScript. Words like unobtrusive have been repurposed to express this kind of separation. That is exactly how I felt, until I started working with React.</article>
+
+		<article>The reason this paradigm exists is to decrease coupling (how much things depend on each other) and increase cohesion (how well different things work together). So we have created an environment in which we try our best to make HTML (and templates) as free of logic as possible. We then need to attach behaviour to this in the form of external scripts.</article>
+
+		<article>There are trade-offs with this approach to doing things. For starters, it takes more effort trying to keep these two things separate. There are many template engines and languages. There are also many template parsers to handle them all. And yet these languages (with the exception of HTML) still seem to include a modicum of logical operations…</article>
+
+		<article>Additionally, when we need to modify the contents of a web page, via JavaScript, we have to know about HTML and/or templates. How else can we know what to display and where to display it? We could load external templates, via additional HTTP requests, but how would we know where to put it without some knowledge of the DOM? We could load templates embedded within special script tags, but we would first need to fetch the contents of those script tags.</article>
+
+		<article>This brings us to the biggest problem with the separation of HTML and JavaScript: The only way we can get elements to attach behaviour to, and read data from, is by knowing about HTML elements in the document. Libraries like jQuery are built around the idea that HTML elements are only a CSS selector away from JavaScript.</article>
+
+		<h1>Components</h1>
+
+		<article>This is possible because JSX isn’t run directly in the browser. It may look that way in some examples, but there’s a script which converts JSX syntax into JS. For this to work, all the special JSX syntax needs to have a JS implementation. When you’re developing in JSX, you’re really just developing in an extended version of JavaScript.</article>
+
+		<article>You may also notice that the comment we began with, which had @jsx React.DOM in it, wasn’t required in the JS implementation. This is because the parser needs to see that in order for it to convert the JSX syntax to JS. Whether you are loading JSX from script elements within the same document, or loading external JSX scripts, you should always include this comment at the top of the script file.</article>
+
+	</div>
+
+
+	<footer>
+		<p></p>
+
+
+	</footer>
+	
+</body>
+</html>
